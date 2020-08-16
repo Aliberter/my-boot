@@ -1,0 +1,12 @@
+# -------------------------------------------------------------
+# ----- Setting File with UTF8-----
+# ----- 自定义配置文件 -----
+# -------------------------------------------------------------
+#token密钥
+token.secretKey=NJNHqGLPie8QaVkfkwxseGcpz7c55o8k
+#token有效时长
+token.expireTime=60
+# -------------------------------------------------------------
+#接口白名单
+security.permitAll=true
+security.whitelist=/register,/login
