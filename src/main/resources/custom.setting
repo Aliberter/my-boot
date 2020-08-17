@@ -9,4 +9,4 @@ token.expireTime=60
 # -------------------------------------------------------------
 #接口白名单
 security.permitAll=false
-security.whitelist=/register,/login
+security.whitelist=/register,/login,/jenkins/success

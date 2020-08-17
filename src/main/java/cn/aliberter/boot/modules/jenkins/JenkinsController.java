@@ -37,7 +37,7 @@ public class JenkinsController {
     @ApiOperation(value = "Jenkins构建完成")
     @PostMapping(value = "/jenkins/success")
     public void jenkinsSuccess(HttpServletRequest request, HttpServletResponse response) {
-        String authorization = request.getHeader("Authorization");
+        String authorization = request.getHeader("jenkins");
         if (HEADER.equals(authorization)) {
             response.setStatus(HttpStatus.HTTP_OK);
             ServletUtil.write(response, "{}", ContentType.JSON.toString());
