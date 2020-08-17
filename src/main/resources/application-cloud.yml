@@ -125,4 +125,4 @@ wx:
     secret: 7507de72cb5d6a3da7e7537adf6460c6
     token: ntWM48aJmLsPLmsf1DftXNahGUUTmoLK
     config-storage:
-      type: memory
+      type: redistemplate
