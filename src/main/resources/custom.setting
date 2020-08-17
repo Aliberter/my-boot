@@ -8,5 +8,5 @@ token.secretKey=NJNHqGLPie8QaVkfkwxseGcpz7c55o8k
 token.expireTime=60
 # -------------------------------------------------------------
 #接口白名单
-security.permitAll=true
+security.permitAll=false
 security.whitelist=/register,/login

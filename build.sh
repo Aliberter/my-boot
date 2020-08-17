@@ -1,3 +1,5 @@
+source /etc/profile
+
 mv /var/lib/jenkins/workspace/my-boot/build/libs/my-boot-0.0.1-SNAPSHOT.jar /root/projects/
 
 pid=$(ps -ef | grep my-boot-0.0.1-SNAPSHOT.jar | grep -v grep | awk '{print $2}')
