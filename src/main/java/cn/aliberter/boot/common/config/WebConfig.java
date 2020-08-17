@@ -1,7 +1,10 @@
 package cn.aliberter.boot.common.config;
 
 import cn.aliberter.boot.common.interceptor.MdcInterceptor;
+import cn.aliberter.boot.common.utils.SpringUtil;
 import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
+import me.chanjar.weixin.mp.api.WxMpMessageRouter;
+import me.chanjar.weixin.mp.api.WxMpService;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;
@@ -107,5 +110,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public Advisor druidStatAdvisor() {
         return new DefaultPointcutAdvisor(druidStatPointcut(), druidStatInterceptor());
+    }
+
+    @Bean
+    public WxMpMessageRouter messageRouter() {
+        return new WxMpMessageRouter(SpringUtil.getBean(WxMpService.class));
     }
 }
