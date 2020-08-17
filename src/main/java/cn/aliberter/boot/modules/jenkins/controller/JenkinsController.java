@@ -1,6 +1,7 @@
-package cn.aliberter.boot.modules.jenkins;
+package cn.aliberter.boot.modules.jenkins.controller;
 
 import cn.aliberter.boot.common.security.SecurityErrorResp;
+import cn.aliberter.boot.modules.wechat.service.facial.SendMsgService;
 import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.ContentType;
 import cn.hutool.http.HttpStatus;
@@ -28,6 +29,8 @@ public class JenkinsController {
 
     private static final String HEADER = "F@Z4>K*?s)hD]^BR:oum";
 
+    private final SendMsgService sendMsgService;
+
     /**
      * Jenkins构建完成
      *
@@ -40,7 +43,8 @@ public class JenkinsController {
         String authorization = request.getHeader("jenkins");
         if (HEADER.equals(authorization)) {
             response.setStatus(HttpStatus.HTTP_OK);
-            ServletUtil.write(response, "{}", ContentType.JSON.toString());
+            ServletUtil.write(response, "项目启动完成😀", ContentType.TEXT_PLAIN.toString());
+            sendMsgService.sendTemplateMsg();
         } else {
             response.setStatus(HttpStatus.HTTP_FORBIDDEN);
             ServletUtil.write(response, new SecurityErrorResp(request.getRequestURI()).toString(), ContentType.JSON.toString());

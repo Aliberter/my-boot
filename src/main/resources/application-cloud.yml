@@ -119,3 +119,8 @@ swagger:
 jasypt:
   encryptor:
     password: c8P2z3PBU2N4Nj4f8ARU
+wx:
+  mp:
+    app-id: wx1e0382805bed6e0d
+    secret: 7507de72cb5d6a3da7e7537adf6460c6
+    token: ntWM48aJmLsPLmsf1DftXNahGUUTmoLK
