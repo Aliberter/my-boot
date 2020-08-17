@@ -17,7 +17,7 @@ configurations {
     compile.exclude group: 'ch.qos.logback', module: 'logback-classic'
     compile.exclude group: 'ch.qos.logback', module: 'logback-core'
     compile.exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-    compile.exclude group: 'org.springframework.data', module: 'spring-data-redis'
+    compile.exclude group: 'redis.clients', module: 'jedis'
 }
 
 dependencies {
