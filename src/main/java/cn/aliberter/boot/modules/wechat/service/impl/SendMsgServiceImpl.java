@@ -37,8 +37,8 @@ public class SendMsgServiceImpl implements SendMsgService {
                     .build();
 
             templateMessage.addData(new WxMpTemplateData("first",
-                    "尊敬的开发者：\r\n\r\n您的项目已经构建完成。\r\n"))
-                    .addData(new WxMpTemplateData("keyword1", "my-boot\r\n"))
+                    "尊敬的开发者：\r\n您的项目已经构建完成。\r\n"))
+                    .addData(new WxMpTemplateData("keyword1", "my-boot"))
                     .addData(new WxMpTemplateData("keyword2", DateUtil.now()));
 
             this.wxService.getTemplateMsgService().sendTemplateMsg(templateMessage);
