@@ -11,6 +11,10 @@ token.expireTime=60
 security.permitAll=false
 security.whitelist=/register,/login,/jenkins/success
 # -------------------------------------------------------------
+wechat.appId=wx1e0382805bed6e0d
+wechat.secret=7507de72cb5d6a3da7e7537adf6460c6
+wechat.token=ntWM48aJmLsPLmsf1DftXNahGUUTmoLK
+#wechat.aesKey=
 #微信用户列表(自己)
 wechat.users=o422M6ttd5mRdL6aV1bLFqTU9vjY
 #微信模板id(项目构建完成通知)

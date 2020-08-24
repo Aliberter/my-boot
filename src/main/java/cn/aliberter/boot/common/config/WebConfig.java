@@ -111,9 +111,4 @@ public class WebConfig implements WebMvcConfigurer {
     public Advisor druidStatAdvisor() {
         return new DefaultPointcutAdvisor(druidStatPointcut(), druidStatInterceptor());
     }
-
-    @Bean
-    public WxMpMessageRouter messageRouter() {
-        return new WxMpMessageRouter(SpringUtil.getBean(WxMpService.class));
-    }
 }

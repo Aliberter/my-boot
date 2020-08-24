@@ -65,8 +65,6 @@ dependencies {
     compile 'net.openhft:chronicle-wire:2.19.76'
     compile 'net.openhft:chronicle-threads:2.19.73'
     compile 'com.google.code.findbugs:annotations:3.0.1'
-    compile ('com.github.binarywang:wx-java-mp-spring-boot-starter:3.8.0'){
-        exclude group: 'redis.clients', module: 'jedis'
-    }
+    compile 'com.github.binarywang:weixin-java-mp:3.8.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
