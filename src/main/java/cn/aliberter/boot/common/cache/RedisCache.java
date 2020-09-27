@@ -19,7 +19,6 @@ import java.util.concurrent.TimeUnit;
  * @version : 1.0
  */
 @Slf4j
-@SuppressWarnings("unused")
 public class RedisCache {
 
     private static RedisTemplate<String, Object> redisTemplate;

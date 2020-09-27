@@ -1,9 +1,6 @@
 package cn.aliberter.boot.common.properties;
 
-import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.setting.Setting;
-import cn.hutool.setting.SettingLoader;
-import cn.hutool.setting.SettingUtil;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -13,7 +10,6 @@ import lombok.extern.slf4j.Slf4j;
  * @version : 1.0
  */
 @Slf4j
-@SuppressWarnings("unused")
 public class CustomSetting {
 
     private static final Setting SETTING = new Setting("custom.setting");

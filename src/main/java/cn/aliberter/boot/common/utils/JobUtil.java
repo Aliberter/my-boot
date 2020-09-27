@@ -17,7 +17,6 @@ import static org.quartz.TriggerBuilder.newTrigger;
  * @version : 1.0
  */
 @Slf4j
-@SuppressWarnings("unused")
 public class JobUtil {
 
     private static final Scheduler SCHEDULER = SpringUtil.getBean(Scheduler.class);

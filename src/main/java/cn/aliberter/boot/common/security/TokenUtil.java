@@ -42,7 +42,6 @@ import java.util.Optional;
  * @version : 1.0
  */
 @Slf4j
-@SuppressWarnings("unused")
 public class TokenUtil {
 
     private static final String SECRET_KEY = Base64.encode(CustomSetting.getStr("token.secretKey"));

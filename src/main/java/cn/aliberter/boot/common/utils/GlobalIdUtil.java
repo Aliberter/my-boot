@@ -9,7 +9,6 @@ import cn.hutool.core.util.IdUtil;
  * @author : aliberter
  * @version : 1.0
  */
-@SuppressWarnings("unused")
 public class GlobalIdUtil {
 
     private static final Snowflake SNOWFLAKE = IdUtil.getSnowflake(1, 1);

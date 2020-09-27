@@ -15,7 +15,6 @@ import java.util.Map;
  * @version : 1.0
  */
 @Component
-@SuppressWarnings("unused")
 public class SpringUtil implements ApplicationContextAware {
 
 	private static ApplicationContext applicationContext;

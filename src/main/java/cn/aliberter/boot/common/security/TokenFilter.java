@@ -1,6 +1,5 @@
 package cn.aliberter.boot.common.security;
 
-import cn.aliberter.boot.common.enums.ResultCode;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.ContentType;

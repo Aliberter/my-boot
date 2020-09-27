@@ -15,7 +15,6 @@ import java.util.*;
  * @version : 1.0
  */
 @Slf4j
-@SuppressWarnings("unused")
 public class LocalCache {
 
     private static final int CAPACITY = 4096;
